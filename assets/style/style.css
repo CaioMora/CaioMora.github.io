@@ -23,11 +23,13 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #191B1F;
   }
   a,
   a:hover,
   a:focus {
     text-decoration: none;
+    color: #fff !important;
   }
   img {
     max-width: 100%;
@@ -36,8 +38,8 @@
     border: none;
   }
   [class*="cma-content-"] {
-    width: 80%;
-    max-width: 960px;
+    width: 90%;
+    margin-bottom: 70px !important;
     margin: 0 auto;
   }
   @font-face {
@@ -188,6 +190,49 @@
       transform: translate3d(0, 0, 0);
     }
   }
+  .cma-menu {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: #1d1d1d;
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    z-index: 1000;
+  }
+  .cma-menu-wrap {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .cma-menu-wrap .logo {
+    margin-right: auto;
+    cursor: pointer;
+    margin-right: 320px;
+  }
+  .cma-menu-margin {
+    margin: auto;
+    width: 80%;
+  }
+  .cma-list-menu {
+    list-style: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+  }
+  .cma-list {
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+  }
+  .cma-list a:hover{
+    cursor: pointer;
+  }
   .cma-content-header {
     -webkit-animation-name: animationContentHeader;
     -moz-animation-name: animationContentHeader;
@@ -207,10 +252,10 @@
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    color: #333;
+    color: #fff;
   }
   .cma-link-border {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #fff;
   }
   .cma-container {
       display: flex;
@@ -354,7 +399,7 @@
   .cma-link-cloud,
   .cma-link-senac {
     padding-bottom: 2px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #fff;
   }
   .cma-link-locawebstyle:hover,
   .cma-link-locawebstyle:focus {
@@ -484,12 +529,12 @@
     }
     .cma-header .cma-content-header h1 {
       font-size: 30px;
-      color: #333;
+      color: #fff;
       text-align: left;
     }
     .cma-header .cma-content-header h3 {
       font-size: 15px;
-      color: #333;
+      color: #fff;
       text-align: left;
     }
     .cma-header .cma-social-networking {
@@ -497,14 +542,14 @@
     }
   }
   .cma-content-article {
-    color: #333;
+    color: #fff;
     padding-bottom: 30px;
   }
   .cma-content-article h2,
   .cma-content-article h3,
   .cma-content-article h4 {
     font-weight: 300;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #fff;
     padding-bottom: 2px;
   }
   .cma-content-article h2 {
