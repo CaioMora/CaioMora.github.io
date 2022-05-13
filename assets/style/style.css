@@ -272,21 +272,25 @@
   }
   .cma-project {
     margin-top: 40px;
-    background-color: #a2f6cf;
+    /* background-color: #a2f6cf; */
+    margin-right: 10px;
     align-items: flex-start;
     border-radius: 32px;
-    color: #242424;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    font-family: Articulat CF,system-ui,sans-serif;
+    /* font-family: Articulat CF,system-ui,sans-serif; */
     margin-bottom: 32px;
     padding: 32px 32px 24px;
-    width: calc(50% - 16px);
+    width: 100%;
     will-change: transform;
   }
+  .cma-project-description, p {
+    color: #829198;
+  }
   .cma-project-button {
-    background-color: #417944;
-    color: #ecfeef;
+    background-color: #C4C4C4;
+    color: #000 !important;
     border-radius: 12px;
     display: inline-block;
     font-family: Articulat CF,system-ui,sans-serif;
@@ -305,11 +309,12 @@
     margin-bottom: 16px;
     margin-top: 0;
     width: 100%;
-    background-color: #6bd490 !important;
+    background-color: #c4c4c4 !important;
   }
   .cma-project-t {
     font-size: 24px !important;
     font-weight: 700;
+    color: #fff !important;
   }
   .cma-project-s {
     font-size: 16px !important;
